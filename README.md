@@ -1,73 +1,91 @@
-# Welcome to your Lovable project
+# Conoce Tucumán - Landing Page
 
-## Project info
+Una landing page responsive con diseño minimalista y layout "bento" para promocionar el turismo en Tucumán, Argentina.
 
-**URL**: https://lovable.dev/projects/75f2c9e9-0c88-49cd-83b3-92a642bdde01
+## 🚀 Inicio rápido
 
-## How can I edit this code?
+### Requisitos
+- Node.js 18+ 
+- npm o yarn
 
-There are several ways of editing your application.
+### Instalación y ejecución
 
-**Use Lovable**
+```bash
+# Clona el repositorio
+git clone <URL_DEL_REPOSITORIO>
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/75f2c9e9-0c88-49cd-83b3-92a642bdde01) and start prompting.
+# Navega al directorio
+cd conoce-tucuman
 
-Changes made via Lovable will be committed automatically to this repo.
+# Instala las dependencias
+npm install
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Inicia el servidor de desarrollo
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+La aplicación estará disponible en `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🎨 Características del diseño
 
-**Use GitHub Codespaces**
+- **Diseño minimalista**: Paleta blanco/negro con acentos grises
+- **Layout Bento**: Grid fluido con cajas de diferentes tamaños
+- **Responsive**: Optimizado para mobile, tablet y desktop
+- **Animaciones suaves**: Transiciones de 200ms con hover effects
+- **Tipografía moderna**: Inter font family
+- **SEO optimizado**: Meta tags completos
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🏗️ Estructura del proyecto
 
-## What technologies are used for this project?
+```
+src/
+├── components/
+│   ├── Navbar.tsx          # Navegación sticky
+│   ├── Hero.tsx            # Sección hero con imagen
+│   ├── BentoGrid.tsx       # Grid de experiencias
+│   ├── BentoCard.tsx       # Tarjeta individual
+│   ├── PlanSection.tsx     # CTA para el bot
+│   ├── FAQSection.tsx      # FAQ + testimonios
+│   ├── ChatBotSection.tsx  # Integración del bot
+│   └── Footer.tsx          # Footer completo
+├── data/
+│   └── experiences.js      # Mock data y testimonios
+├── assets/
+│   └── *.jpg              # Imágenes generadas
+└── pages/
+    └── Index.tsx          # Página principal
+```
 
-This project is built with:
+## 🤖 Integración ChatBot
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+El proyecto incluye la integración con Chatbase usando el script proporcionado. El bot se carga automáticamente en la sección correspondiente.
 
-## How can I deploy this project?
+## 🚀 Stack tecnológico
 
-Simply open [Lovable](https://lovable.dev/projects/75f2c9e9-0c88-49cd-83b3-92a642bdde01) and click on Share -> Publish.
+- **React 18** - Framework principal
+- **TypeScript** - Tipado estático
+- **Tailwind CSS** - Estilos utilitarios
+- **Lucide React** - Iconografía
+- **Vite** - Build tool
+- **shadcn/ui** - Componentes base
 
-## Can I connect a custom domain to my Lovable project?
+## 📱 Secciones incluidas
 
-Yes, you can!
+1. **Navbar**: Navegación sticky con enlaces ancla
+2. **Hero**: Vista aérea con CTAs principales
+3. **Experiencias**: Grid bento con 12 experiencias
+4. **Plan ideal**: Promoción del asistente IA
+5. **FAQ + Testimonios**: Preguntas frecuentes y reseñas
+6. **ChatBot**: Integración del asistente 24/7
+7. **Footer**: Enlaces, redes sociales y créditos
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🌟 Experiencias incluidas
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Historia: Casa Histórica, Catedral, Plaza Independencia
+- Naturaleza: Parque 9 de Julio, Tafí del Valle, El Cadillal
+- Aventura: Parapente, Trekking, Mountain Bike, Motocross
+- Cultura: Teatro San Martín, Vida Nocturna
+
+---
+
+**Desarrollado por Koi Studio** 💚
