@@ -52,5 +52,10 @@
 
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden; /* Prevent horizontal scroll for hero animation */
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 }

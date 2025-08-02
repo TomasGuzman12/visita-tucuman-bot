@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
+import ScrollExpandHero from "@/components/ScrollExpandHero";
 import BentoGrid from "@/components/BentoGrid";
 import PlanSection from "@/components/PlanSection";
 import FAQSection from "@/components/FAQSection";
@@ -29,7 +29,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <main>
-        <Hero />
+        <ScrollExpandHero />
         <BentoGrid />
         <PlanSection />
         <FAQSection />
