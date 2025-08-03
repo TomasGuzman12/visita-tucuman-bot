@@ -1,7 +1,7 @@
 import { Bot, ArrowRight } from "lucide-react";
 import ScrollExpandMedia from "@/components/ui/scroll-expansion-hero";
 import heroImage from "@/assets/hero-tucuman.jpg";
-import casaHistorica from "@/assets/casa-historica.jpg";
+import casaHistorica from "@/assets/casa-historica.webp";
 
 const ScrollExpandHero = () => {
   const scrollToSection = (id: string) => {

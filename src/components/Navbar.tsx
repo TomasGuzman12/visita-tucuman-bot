@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Bot } from "lucide-react";
+// Importamos la imagen del logo
+import logoTapir from "../assets/logo-tapir.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,9 +35,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-foreground">
-              Conoce Tucumán
-            </h1>
+            <img 
+              src={logoTapir} 
+              alt="Logo Tapir" 
+              className="h-10 w-auto" 
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              style={{ cursor: 'pointer' }}
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -59,13 +65,17 @@ const Navbar = () => {
               >
                 FAQ
               </button>
-              <button
-                onClick={() => scrollToSection("chatbot")}
+              <a
+                href="#chatbot"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("chatbot");
+                }}
                 className="bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors duration-200 flex items-center gap-2"
               >
                 <Bot size={16} />
                 Habla con el bot
-              </button>
+              </a>
             </div>
           </div>
 

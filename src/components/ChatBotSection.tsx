@@ -60,16 +60,14 @@ const ChatBotSection = () => {
           {/* ChatBot Embed Container */}
           <div 
             id="chatbase-embed" 
-            className="min-h-[500px] w-full bg-card"
-            style={{ minHeight: '500px' }}
+            className="w-full bg-card"
           >
-            {/* El script del chatbot se cargará aquí */}
-            <div className="flex items-center justify-center h-[500px] text-muted-foreground">
-              <div className="text-center">
-                <Bot className="w-12 h-12 mx-auto mb-4 opacity-50" />
-                <p className="text-sm">Cargando asistente...</p>
-              </div>
-            </div>
+            <iframe 
+              src="https://www.chatbase.co/chatbot-iframe/e0v61zj4YxVNM4nCpl2q9" 
+              width="100%" 
+              style={{ height: '100%', minHeight: '700px' }} 
+              frameBorder="0" 
+            ></iframe>
           </div>
         </div>
       </div>

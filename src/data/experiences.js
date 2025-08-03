@@ -1,9 +1,9 @@
-import casaHistorica from "@/assets/casa-historica.jpg";
-import catedral from "@/assets/catedral.jpg";
+import casaHistorica from "@/assets/casa-historica.webp";
+import catedral from "@/assets/catedral.webp";
 import parque9Julio from "@/assets/parque-9-julio.jpg";
 import tafiValle from "@/assets/tafi-valle.jpg";
 import parapente from "@/assets/parapente.jpg";
-import elCadillal from "@/assets/el-cadillal.jpg";
+import elCadillal from "@/assets/cadillal.webp";
 import trekking from "@/assets/trekking.jpg";
 import mountainBike from "@/assets/mountain-bike.jpg";
 import motocross from "@/assets/motocross.jpg";
@@ -93,33 +93,7 @@ export const experiences = [
     iconName: "Zap",
     size: "medium" // 1x1
   },
-  {
-    id: 10,
-    title: "Vida Nocturna",
-    category: "Entretenimiento",
-    description: "Bares y boliches en Yerba Buena",
-    imageUrl: nightlife,
-    iconName: "Music",
-    size: "large" // 2x1
-  },
-  {
-    id: 11,
-    title: "Teatro San Martín",
-    category: "Cultura",
-    description: "Arte y espectáculos únicos",
-    imageUrl: teatro,
-    iconName: "Theater",
-    size: "tall" // 1x2
-  },
-  {
-    id: 12,
-    title: "Plaza Independencia",
-    category: "Monumentos",
-    description: "Corazón histórico de la ciudad",
-    imageUrl: plazaIndependencia,
-    iconName: "Landmark",
-    size: "medium" // 1x1
-  }
+ 
 ];
 
 export const faqs = [
