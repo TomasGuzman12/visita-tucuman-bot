@@ -12,7 +12,7 @@ const ScrollExpandHero = () => {
     };
 
     return (
-        <div className="h-screen flex items-center justify-center bg-hero bg-cover bg-center">
+        <div className="h-screen flex items-end p-8 justify-center bg-hero bg-cover bg-center">
             <div className="max-w-4xl mx-auto text-center space-y-8">
                 {/*  <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
                     Historia, aventura y naturaleza te esperan
